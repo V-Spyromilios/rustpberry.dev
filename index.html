@@ -17,8 +17,8 @@
 
     body {
       font-family: 'JetBrains Mono', monospace;
-      background-color: #0f0f0f;
-      color: #f2f2f2;
+      background-color: #1e1e1e; /* VS Code dark */
+      color: #d4d4d4;
       padding: 2rem;
       line-height: 1.6;
     }
@@ -26,101 +26,77 @@
     .container {
       max-width: 800px;
       margin: 0 auto;
-      text-align: center;
+      text-align: left;
+    }
+
+    h1, h2, h3 {
+      color: #ffffff;
     }
 
     h1 {
       font-size: 2rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
     }
 
-    .typewriter {
-      color: #00ff88;
-      white-space: nowrap;
-      overflow: hidden;
-      border-right: 0.15em solid #00ff88;
-      animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
-      max-width: 100%;
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .tagline {
       font-size: 1.1rem;
-      margin: 0 auto 2rem auto;
-    }
-
-    @keyframes typing {
-      from { width: 0 }
-      to { width: 100% }
-    }
-
-    @keyframes blink-caret {
-      50% { border-color: transparent }
+      margin-bottom: 2rem;
+      color: #9CDCFE;
     }
 
     .contact a {
-      display: block;
-      margin: 0.3rem 0;
-      color: #77c0ff;
+      display: inline-block;
+      margin: 0.3rem 1rem 2rem 0;
+      color: #569cd6;
       text-decoration: none;
     }
 
     .contact a:hover {
+      text-decoration: underline;
+    }
+
+    .journal-list {
+      list-style: none;
+      padding: 0;
+      margin-top: 1rem;
+    }
+
+    .journal-list li {
+      margin-bottom: 0.5rem;
+    }
+
+    .journal-list a {
+      color: #9CDCFE;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .journal-list a:hover {
       color: #ffffff;
     }
 
     .construction {
-      font-size: 1.2rem;
       margin-top: 2rem;
+      font-size: 1.2rem;
       animation: blink 1.2s steps(1) infinite;
       color: #ffaa00;
     }
 
     @keyframes blink {
-      50% { opacity: 0 }
-    }
-
-    .journal {
-      margin-top: 4rem;
-      text-align: left;
-    }
-
-    .journal h2 {
-      font-size: 1.4rem;
-      border-bottom: 1px solid #444;
-      margin-bottom: 1rem;
-    }
-
-    .entry {
-      margin-bottom: 1.5rem;
-    }
-
-    .entry h3 {
-      margin-bottom: 0.3rem;
-      color: #00c7ff;
-    }
-
-    .journal-list {
-  list-style: none;
-  padding: 0;
-  margin-top: 1rem;
-}
-.journal-list li {
-  margin-bottom: 0.5rem;
-}
-.journal-list a {
-  color: #00c7ff;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-.journal-list a:hover {
-  color: #ffffff;
-}
-
-    .entry p {
-      margin: 0;
-      font-size: 0.95rem;
+      50% {
+        opacity: 0;
+      }
     }
 
     @media (max-width: 600px) {
       h1 { font-size: 1.5rem; }
-      .typewriter { font-size: 1rem; }
+      .tagline { font-size: 1rem; }
     }
   </style>
 </head>
@@ -128,42 +104,24 @@
 
   <div class="container">
     <h1>rustpberry.dev</h1>
-    <div class="typewriter">echo "Journaling my journey from mobile to embedded engineering..."</div>
+    <p class="tagline">Journaling my learning journey from mobile to embedded engineering</p>
 
     <div class="contact">
       <a href="mailto:hi@rustpberry.dev">hi@rustpberry.dev</a>
-      <a href="https://www.linkedin.com/in/evangelos-spyromilios/" target="_blank">LinkedIn Profile</a>
+      <a href="https://www.linkedin.com/in/evangelos-spyromilios/" target="_blank">LinkedIn</a>
     </div>
 
     <div class="construction">🚧 Under Construction 🚧</div>
 
-    <div class="journal">
-      <h2>Journal</h2>
-
-      <div class="entry">
-        <h3>May 2025 — Joined SEA:ME and started Rust full-time</h3>
-        <p>Starting the next chapter — diving into embedded systems, real-time programming, and low-level control. Goodbye UIKit, hello `no_std`.</p>
-      </div>
-
-      <div class="entry">
-        <h3>April 2025 — Built a Raspberry Pi 5 cluster</h3>
-        <p>Running Ubuntu Server, experimenting with k3s and Go microservices to simulate autonomous robotics backend infrastructure.</p>
-      </div>
-
-      <div class="entry">
-        <h3>March 2025 — Shipped Kioku to App Store</h3>
-        <p>My first app, built with SwiftUI and OpenAI API. Gave me the confidence to pivot toward what I really want: robotics, autonomy, and embedded control.</p>
-      </div>
-
-
-  <ul class="journal-list">
-  <li>
-    <a href="https://www.notion.so/State-ObservedObject-cbaddd5bc06a4aa9827734ea19612c0e?pvs=4" target="_blank">
-      <strong>May 2025 —</strong> @State vs @ObservedObject in SwiftUI
-    </a>
-  </li>
-</ul>
-    </div>
+    <h2>Journal</h2>
+    <ul class="journal-list">
+      <li>
+        <a href="https://www.notion.so/State-ObservedObject-cbaddd5bc06a4aa9827734ea19612c0e?pvs=4" target="_blank">
+          <strong>May 2025 —</strong> @State vs @ObservedObject in SwiftUI
+        </a>
+      </li>
+      <!-- Add more entries here -->
+    </ul>
   </div>
 
 </body>
