@@ -96,6 +96,23 @@
       color: #00c7ff;
     }
 
+    .journal-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+.journal-list li {
+  margin-bottom: 0.5rem;
+}
+.journal-list a {
+  color: #00c7ff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.journal-list a:hover {
+  color: #ffffff;
+}
+
     .entry p {
       margin: 0;
       font-size: 0.95rem;
@@ -139,16 +156,13 @@
       </div>
 
 
-   <div class="journal">
-  <h2>Journal</h2>
-  <ul>
-    <li>
-      <a href="https://www.notion.so/State-ObservedObject-cbaddd5bc06a4aa9827734ea19612c0e?pvs=4" target="_blank">
-        @State vs @ObservedObject in SwiftUI — May 2025
-      </a>
-    </li>
-  </ul>
-</div>
+  <ul class="journal-list">
+  <li>
+    <a href="https://www.notion.so/State-ObservedObject-cbaddd5bc06a4aa9827734ea19612c0e?pvs=4" target="_blank">
+      <strong>May 2025 —</strong> @State vs @ObservedObject in SwiftUI
+    </a>
+  </li>
+</ul>
     </div>
   </div>
 
