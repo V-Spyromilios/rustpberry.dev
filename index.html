@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>rustpberry.dev</title>
+
+  <!-- JetBrains Mono -->
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'JetBrains Mono', monospace;
+      background-color: #0f0f0f;
+      color: #f2f2f2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    p.tagline {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      max-width: 600px;
+    }
+
+    .contact a {
+      display: block;
+      margin: 0.3rem 0;
+      color: #77c0ff;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .contact a:hover {
+      color: #ffffff;
+    }
+
+    .construction {
+      margin-top: 2rem;
+      font-size: 1.2rem;
+      animation: blink 1.2s steps(1) infinite;
+      color: #ffaa00;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      p.tagline {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>rustpberry.dev</h1>
+  <p class="tagline">Journaling my learning journey from mobile to embedded engineering</p>
+
+  <div class="contact">
+    <a href="mailto:hi@rustpberry.dev">hi@rustpberry.dev</a>
+    <a href="https://www.linkedin.com/in/evangelos-spyromilios/" target="_blank">LinkedIn Profile</a>
+  </div>
+
+  <div class="construction">🚧 Under Construction 🚧</div>
+
+</body>
+</html>
